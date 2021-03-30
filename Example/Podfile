@@ -4,7 +4,12 @@ platform :ios, '9.0'
 
 target 'CLWebRTC_Example' do
   pod 'CLWebRTC', :path => '../'
-
+  
+  
+  pod 'Starscream', '~> 3.0.6'
+  pod 'WebRTC', '~> 63.11.20455'
+  
+  
   target 'CLWebRTC_Tests' do
     inherit! :search_paths
 

@@ -41,11 +41,11 @@
 		607FACE51AFB9204008FA782 /* CLWebRTC_Tests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = CLWebRTC_Tests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		607FACEA1AFB9204008FA782 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		607FACEB1AFB9204008FA782 /* Tests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Tests.swift; sourceTree = "<group>"; };
-		912D9E26B977E312E8D4CE97 /* CLWebRTC.podspec */ = {isa = PBXFileReference; includeInIndex = 1; name = CLWebRTC.podspec; path = ../CLWebRTC.podspec; sourceTree = "<group>"; };
+		912D9E26B977E312E8D4CE97 /* CLWebRTC.podspec */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = CLWebRTC.podspec; path = ../CLWebRTC.podspec; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
 		9EC90268CD2466E608FB9601 /* Pods-CLWebRTC_Example.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CLWebRTC_Example.debug.xcconfig"; path = "Target Support Files/Pods-CLWebRTC_Example/Pods-CLWebRTC_Example.debug.xcconfig"; sourceTree = "<group>"; };
 		B14F93B6EA7464EAE98D8114 /* Pods-CLWebRTC_Tests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CLWebRTC_Tests.release.xcconfig"; path = "Target Support Files/Pods-CLWebRTC_Tests/Pods-CLWebRTC_Tests.release.xcconfig"; sourceTree = "<group>"; };
-		D4024BF12F64B8E36047E2C4 /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; name = LICENSE; path = ../LICENSE; sourceTree = "<group>"; };
-		D6DA108DE5130AB53BAF0C10 /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; name = README.md; path = ../README.md; sourceTree = "<group>"; };
+		D4024BF12F64B8E36047E2C4 /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = LICENSE; path = ../LICENSE; sourceTree = "<group>"; };
+		D6DA108DE5130AB53BAF0C10 /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = net.daringfireball.markdown; name = README.md; path = ../README.md; sourceTree = "<group>"; };
 		DE48765E8B66230E55DA8DD2 /* Pods-CLWebRTC_Example.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CLWebRTC_Example.release.xcconfig"; path = "Target Support Files/Pods-CLWebRTC_Example/Pods-CLWebRTC_Example.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -156,7 +156,6 @@
 				582B1B2E024D1221A087BD66 /* Pods-CLWebRTC_Tests.debug.xcconfig */,
 				B14F93B6EA7464EAE98D8114 /* Pods-CLWebRTC_Tests.release.xcconfig */,
 			);
-			name = Pods;
 			path = Pods;
 			sourceTree = "<group>";
 		};
@@ -213,10 +212,12 @@
 				TargetAttributes = {
 					607FACCF1AFB9204008FA782 = {
 						CreatedOnToolsVersion = 6.3.1;
+						DevelopmentTeam = TV2FDL7J4S;
 						LastSwiftMigration = 0900;
 					};
 					607FACE41AFB9204008FA782 = {
 						CreatedOnToolsVersion = 6.3.1;
+						DevelopmentTeam = TV2FDL7J4S;
 						LastSwiftMigration = 0900;
 						TestTargetID = 607FACCF1AFB9204008FA782;
 					};
@@ -227,6 +228,7 @@
 			developmentRegion = English;
 			hasScannedForEncodings = 0;
 			knownRegions = (
+				English,
 				en,
 				Base,
 			);
@@ -292,10 +294,14 @@
 			inputPaths = (
 				"${PODS_ROOT}/Target Support Files/Pods-CLWebRTC_Example/Pods-CLWebRTC_Example-frameworks.sh",
 				"${BUILT_PRODUCTS_DIR}/CLWebRTC/CLWebRTC.framework",
+				"${BUILT_PRODUCTS_DIR}/Starscream/Starscream.framework",
+				"${PODS_ROOT}/WebRTC/WebRTC.framework",
 			);
 			name = "[CP] Embed Pods Frameworks";
 			outputPaths = (
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/CLWebRTC.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Starscream.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/WebRTC.framework",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
@@ -419,7 +425,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				MTL_ENABLE_DEBUG_INFO = YES;
 				ONLY_ACTIVE_ARCH = YES;
 				SDKROOT = iphoneos;
@@ -465,7 +471,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				SDKROOT = iphoneos;
 				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
@@ -478,6 +484,8 @@
 			baseConfigurationReference = 9EC90268CD2466E608FB9601 /* Pods-CLWebRTC_Example.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = TV2FDL7J4S;
+				ENABLE_BITCODE = NO;
 				INFOPLIST_FILE = CLWebRTC/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				MODULE_NAME = ExampleApp;
@@ -493,6 +501,8 @@
 			baseConfigurationReference = DE48765E8B66230E55DA8DD2 /* Pods-CLWebRTC_Example.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = TV2FDL7J4S;
+				ENABLE_BITCODE = NO;
 				INFOPLIST_FILE = CLWebRTC/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				MODULE_NAME = ExampleApp;
@@ -507,6 +517,7 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 582B1B2E024D1221A087BD66 /* Pods-CLWebRTC_Tests.debug.xcconfig */;
 			buildSettings = {
+				DEVELOPMENT_TEAM = TV2FDL7J4S;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(PLATFORM_DIR)/Developer/Library/Frameworks",
 					"$(inherited)",
@@ -529,6 +540,7 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = B14F93B6EA7464EAE98D8114 /* Pods-CLWebRTC_Tests.release.xcconfig */;
 			buildSettings = {
+				DEVELOPMENT_TEAM = TV2FDL7J4S;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(PLATFORM_DIR)/Developer/Library/Frameworks",
 					"$(inherited)",
