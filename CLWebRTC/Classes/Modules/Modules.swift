@@ -115,12 +115,12 @@ struct AttachData : Codable {
 struct AttachId : Codable {
     var id:Int64
 }
-struct Publisher : Codable {
-    var id:Int64
-    var display:String
-    var audio_codec:String?
-    var video_codec:String?
-    var talking:Bool?
+ public struct Publisher : Codable {
+    public var id:Int64
+    public var display:String
+    public var audio_codec:String?
+    public var video_codec:String?
+    public var talking:Bool?
 }
 public struct Participant : Codable {
     public var id:Int64
@@ -139,28 +139,28 @@ struct CandidateData: Codable{
 }
 
 
-struct JoinData : Codable {
+public struct JoinData : Codable {
    
-    struct InData: Codable{
-        var videoroom:String?
-        var description:String?
-        var id:Double?
-        var room:Int64?
-        var private_id:Int64?
-        var publishers:[Publisher]?
+    public struct InData: Codable{
+        public var videoroom:String?
+        public  var description:String?
+        public  var id:Double?
+        public  var room:Int64?
+        public  var private_id:Int64?
+        public   var publishers:[Publisher]?
         //for error parsing
-        var error_code:Int64?
-        var error:String?
+        public  var error_code:Int64?
+        public  var error:String?
     }
-    struct PluginData: Codable{
-        var plugin:String
-        var data:InData
+    public struct PluginData: Codable{
+        public var plugin:String
+        public var data:InData
     }
-    var codelabs:String
-    var transaction:String?
-    var plugindata:PluginData
-    var session_id:Int64
-    var sender :Int64
+    public var codelabs:String
+    public  var transaction:String?
+    public  var plugindata:PluginData
+    public  var session_id:Int64
+    public  var sender :Int64
 }
 struct JoinOfferData : Codable {
     

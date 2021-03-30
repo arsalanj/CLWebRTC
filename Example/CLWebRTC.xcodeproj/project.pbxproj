@@ -8,11 +8,19 @@
 
 /* Begin PBXBuildFile section */
 		607FACD61AFB9204008FA782 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 607FACD51AFB9204008FA782 /* AppDelegate.swift */; };
-		607FACD81AFB9204008FA782 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 607FACD71AFB9204008FA782 /* ViewController.swift */; };
-		607FACDB1AFB9204008FA782 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 607FACD91AFB9204008FA782 /* Main.storyboard */; };
-		607FACDD1AFB9204008FA782 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 607FACDC1AFB9204008FA782 /* Images.xcassets */; };
-		607FACE01AFB9204008FA782 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 607FACDE1AFB9204008FA782 /* LaunchScreen.xib */; };
 		607FACEC1AFB9204008FA782 /* Tests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 607FACEB1AFB9204008FA782 /* Tests.swift */; };
+		9197C1B92613625C00AC704C /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9197C1AD2613625B00AC704C /* Images.xcassets */; };
+		9197C1BA2613625C00AC704C /* RemoteViews.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9197C1AF2613625B00AC704C /* RemoteViews.swift */; };
+		9197C1BB2613625C00AC704C /* TestViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9197C1B02613625B00AC704C /* TestViewController.swift */; };
+		9197C1BC2613625C00AC704C /* CollectionReusableView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9197C1B12613625B00AC704C /* CollectionReusableView.swift */; };
+		9197C1BD2613625C00AC704C /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9197C1B22613625B00AC704C /* ViewController.swift */; };
+		9197C1BE2613625C00AC704C /* GridCollectionViewLayout.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9197C1B32613625B00AC704C /* GridCollectionViewLayout.swift */; };
+		9197C1BF2613625C00AC704C /* Utility.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9197C1B52613625C00AC704C /* Utility.swift */; };
+		9197C1C02613625C00AC704C /* Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9197C1B62613625C00AC704C /* Extension.swift */; };
+		9197C1C12613625C00AC704C /* CollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9197C1B72613625C00AC704C /* CollectionViewCell.swift */; };
+		9197C1C22613625C00AC704C /* FirstViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9197C1B82613625C00AC704C /* FirstViewController.swift */; };
+		9197C1F62613664F00AC704C /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 9197C1F22613664F00AC704C /* LaunchScreen.xib */; };
+		9197C1F72613664F00AC704C /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9197C1F42613664F00AC704C /* Main.storyboard */; };
 		EADB86257143E2435A58F2D1 /* Pods_CLWebRTC_Example.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 070210C3A084A9A23EEB168D /* Pods_CLWebRTC_Example.framework */; };
 		F8E044803875DD3E539E2E6B /* Pods_CLWebRTC_Tests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0439F8798C47DC4093DA2C31 /* Pods_CLWebRTC_Tests.framework */; };
 /* End PBXBuildFile section */
@@ -34,14 +42,23 @@
 		607FACD01AFB9204008FA782 /* CLWebRTC_Example.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CLWebRTC_Example.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		607FACD41AFB9204008FA782 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		607FACD51AFB9204008FA782 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		607FACD71AFB9204008FA782 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		607FACDA1AFB9204008FA782 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
-		607FACDC1AFB9204008FA782 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
-		607FACDF1AFB9204008FA782 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
 		607FACE51AFB9204008FA782 /* CLWebRTC_Tests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = CLWebRTC_Tests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		607FACEA1AFB9204008FA782 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		607FACEB1AFB9204008FA782 /* Tests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Tests.swift; sourceTree = "<group>"; };
 		912D9E26B977E312E8D4CE97 /* CLWebRTC.podspec */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = CLWebRTC.podspec; path = ../CLWebRTC.podspec; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		9197C1AD2613625B00AC704C /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		9197C1AF2613625B00AC704C /* RemoteViews.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RemoteViews.swift; sourceTree = "<group>"; };
+		9197C1B02613625B00AC704C /* TestViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TestViewController.swift; sourceTree = "<group>"; };
+		9197C1B12613625B00AC704C /* CollectionReusableView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CollectionReusableView.swift; sourceTree = "<group>"; };
+		9197C1B22613625B00AC704C /* ViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		9197C1B32613625B00AC704C /* GridCollectionViewLayout.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GridCollectionViewLayout.swift; sourceTree = "<group>"; };
+		9197C1B52613625C00AC704C /* Utility.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Utility.swift; sourceTree = "<group>"; };
+		9197C1B62613625C00AC704C /* Extension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Extension.swift; sourceTree = "<group>"; };
+		9197C1B72613625C00AC704C /* CollectionViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CollectionViewCell.swift; sourceTree = "<group>"; };
+		9197C1B82613625C00AC704C /* FirstViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FirstViewController.swift; sourceTree = "<group>"; };
+		9197C1F32613664F00AC704C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = LaunchScreen.xib; sourceTree = "<group>"; };
+		9197C1F52613664F00AC704C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Main.storyboard; sourceTree = "<group>"; };
+		9197C206261366CE00AC704C /* CLWebRTC_Example.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = CLWebRTC_Example.entitlements; sourceTree = "<group>"; };
 		9EC90268CD2466E608FB9601 /* Pods-CLWebRTC_Example.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CLWebRTC_Example.debug.xcconfig"; path = "Target Support Files/Pods-CLWebRTC_Example/Pods-CLWebRTC_Example.debug.xcconfig"; sourceTree = "<group>"; };
 		B14F93B6EA7464EAE98D8114 /* Pods-CLWebRTC_Tests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CLWebRTC_Tests.release.xcconfig"; path = "Target Support Files/Pods-CLWebRTC_Tests/Pods-CLWebRTC_Tests.release.xcconfig"; sourceTree = "<group>"; };
 		D4024BF12F64B8E36047E2C4 /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = LICENSE; path = ../LICENSE; sourceTree = "<group>"; };
@@ -72,6 +89,7 @@
 		607FACC71AFB9204008FA782 = {
 			isa = PBXGroup;
 			children = (
+				9197C206261366CE00AC704C /* CLWebRTC_Example.entitlements */,
 				607FACF51AFB993E008FA782 /* Podspec Metadata */,
 				607FACD21AFB9204008FA782 /* Example for CLWebRTC */,
 				607FACE81AFB9204008FA782 /* Tests */,
@@ -93,11 +111,18 @@
 		607FACD21AFB9204008FA782 /* Example for CLWebRTC */ = {
 			isa = PBXGroup;
 			children = (
+				9197C1F12613664F00AC704C /* Base.lproj */,
+				9197C1B12613625B00AC704C /* CollectionReusableView.swift */,
+				9197C1B72613625C00AC704C /* CollectionViewCell.swift */,
+				9197C1B62613625C00AC704C /* Extension.swift */,
+				9197C1B82613625C00AC704C /* FirstViewController.swift */,
+				9197C1B32613625B00AC704C /* GridCollectionViewLayout.swift */,
+				9197C1B42613625C00AC704C /* Helpers */,
+				9197C1AD2613625B00AC704C /* Images.xcassets */,
+				9197C1AE2613625B00AC704C /* Models */,
+				9197C1B02613625B00AC704C /* TestViewController.swift */,
+				9197C1B22613625B00AC704C /* ViewController.swift */,
 				607FACD51AFB9204008FA782 /* AppDelegate.swift */,
-				607FACD71AFB9204008FA782 /* ViewController.swift */,
-				607FACD91AFB9204008FA782 /* Main.storyboard */,
-				607FACDC1AFB9204008FA782 /* Images.xcassets */,
-				607FACDE1AFB9204008FA782 /* LaunchScreen.xib */,
 				607FACD31AFB9204008FA782 /* Supporting Files */,
 			);
 			name = "Example for CLWebRTC";
@@ -146,6 +171,32 @@
 				0439F8798C47DC4093DA2C31 /* Pods_CLWebRTC_Tests.framework */,
 			);
 			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		9197C1AE2613625B00AC704C /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				9197C1AF2613625B00AC704C /* RemoteViews.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		9197C1B42613625C00AC704C /* Helpers */ = {
+			isa = PBXGroup;
+			children = (
+				9197C1B52613625C00AC704C /* Utility.swift */,
+			);
+			path = Helpers;
+			sourceTree = "<group>";
+		};
+		9197C1F12613664F00AC704C /* Base.lproj */ = {
+			isa = PBXGroup;
+			children = (
+				9197C1F22613664F00AC704C /* LaunchScreen.xib */,
+				9197C1F42613664F00AC704C /* Main.storyboard */,
+			);
+			name = Base.lproj;
+			path = "../../../../CodelabsWebRTC - active/CodelabsWebRTC/CodelabsWebRTC/Base.lproj";
 			sourceTree = "<group>";
 		};
 		BF9BCB51C891C794C68E9E53 /* Pods */ = {
@@ -248,9 +299,9 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				607FACDB1AFB9204008FA782 /* Main.storyboard in Resources */,
-				607FACE01AFB9204008FA782 /* LaunchScreen.xib in Resources */,
-				607FACDD1AFB9204008FA782 /* Images.xcassets in Resources */,
+				9197C1F72613664F00AC704C /* Main.storyboard in Resources */,
+				9197C1F62613664F00AC704C /* LaunchScreen.xib in Resources */,
+				9197C1B92613625C00AC704C /* Images.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -294,12 +345,14 @@
 			inputPaths = (
 				"${PODS_ROOT}/Target Support Files/Pods-CLWebRTC_Example/Pods-CLWebRTC_Example-frameworks.sh",
 				"${BUILT_PRODUCTS_DIR}/CLWebRTC/CLWebRTC.framework",
+				"${BUILT_PRODUCTS_DIR}/SnapKit/SnapKit.framework",
 				"${BUILT_PRODUCTS_DIR}/Starscream/Starscream.framework",
 				"${PODS_ROOT}/WebRTC/WebRTC.framework",
 			);
 			name = "[CP] Embed Pods Frameworks";
 			outputPaths = (
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/CLWebRTC.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SnapKit.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Starscream.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/WebRTC.framework",
 			);
@@ -337,8 +390,16 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				607FACD81AFB9204008FA782 /* ViewController.swift in Sources */,
+				9197C1BF2613625C00AC704C /* Utility.swift in Sources */,
+				9197C1BD2613625C00AC704C /* ViewController.swift in Sources */,
+				9197C1C12613625C00AC704C /* CollectionViewCell.swift in Sources */,
+				9197C1BA2613625C00AC704C /* RemoteViews.swift in Sources */,
+				9197C1BC2613625C00AC704C /* CollectionReusableView.swift in Sources */,
+				9197C1C22613625C00AC704C /* FirstViewController.swift in Sources */,
+				9197C1BB2613625C00AC704C /* TestViewController.swift in Sources */,
+				9197C1BE2613625C00AC704C /* GridCollectionViewLayout.swift in Sources */,
 				607FACD61AFB9204008FA782 /* AppDelegate.swift in Sources */,
+				9197C1C02613625C00AC704C /* Extension.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -361,20 +422,20 @@
 /* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
-		607FACD91AFB9204008FA782 /* Main.storyboard */ = {
+		9197C1F22613664F00AC704C /* LaunchScreen.xib */ = {
 			isa = PBXVariantGroup;
 			children = (
-				607FACDA1AFB9204008FA782 /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
-		607FACDE1AFB9204008FA782 /* LaunchScreen.xib */ = {
-			isa = PBXVariantGroup;
-			children = (
-				607FACDF1AFB9204008FA782 /* Base */,
+				9197C1F32613664F00AC704C /* Base */,
 			);
 			name = LaunchScreen.xib;
+			sourceTree = "<group>";
+		};
+		9197C1F42613664F00AC704C /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				9197C1F52613664F00AC704C /* Base */,
+			);
+			name = Main.storyboard;
 			sourceTree = "<group>";
 		};
 /* End PBXVariantGroup section */
@@ -484,12 +545,15 @@
 			baseConfigurationReference = 9EC90268CD2466E608FB9601 /* Pods-CLWebRTC_Example.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = CLWebRTC_Example.entitlements;
+				CURRENT_PROJECT_VERSION = 3;
 				DEVELOPMENT_TEAM = TV2FDL7J4S;
 				ENABLE_BITCODE = NO;
 				INFOPLIST_FILE = CLWebRTC/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				MARKETING_VERSION = 1.0.1;
 				MODULE_NAME = ExampleApp;
-				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.demo.$(PRODUCT_NAME:rfc1034identifier)";
+				PRODUCT_BUNDLE_IDENTIFIER = inc.codelabs.codelabswebrtc;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_SWIFT3_OBJC_INFERENCE = Default;
 				SWIFT_VERSION = 4.0;
@@ -501,12 +565,15 @@
 			baseConfigurationReference = DE48765E8B66230E55DA8DD2 /* Pods-CLWebRTC_Example.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = CLWebRTC_Example.entitlements;
+				CURRENT_PROJECT_VERSION = 3;
 				DEVELOPMENT_TEAM = TV2FDL7J4S;
 				ENABLE_BITCODE = NO;
 				INFOPLIST_FILE = CLWebRTC/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				MARKETING_VERSION = 1.0.1;
 				MODULE_NAME = ExampleApp;
-				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.demo.$(PRODUCT_NAME:rfc1034identifier)";
+				PRODUCT_BUNDLE_IDENTIFIER = inc.codelabs.codelabswebrtc;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_SWIFT3_OBJC_INFERENCE = Default;
 				SWIFT_VERSION = 4.0;

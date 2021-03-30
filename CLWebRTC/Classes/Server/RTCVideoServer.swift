@@ -6,7 +6,7 @@ import Starscream
 import WebRTC
 
 
-enum CodelabsType
+public enum CodelabsType
 {
     case Join
     case Create
@@ -18,24 +18,24 @@ public class RTCVideoServer: WebSocketDelegate ,CodelabsRTCServerDelegate{
   
     
 
-    var videoServerDelegate:RTCVideoServerDelegate?
+    open var videoServerDelegate:RTCVideoServerDelegate?
 
 
     open var initPublish = true
     open var maxViewer = 20
     open var display:String=""
-    var roomId:Int64=1234
+    open var roomId:Int64=1234
    open var roomName:String=""
     
     open var participantsData: JoinParticipantsData?
-     var joinedParticipant: JoinData?
+   open var joinedParticipant: JoinData?
     var session_id:Int64 = 0
     var private_id:Int64 = 0
     var codelabsId_id_to_handle:[String:Int64] = [:]
     var info_from_codelabsId:[Int64:Publisher] = [:]
     open var client:RTCClient?
     
-    var type:CodelabsType = .Join
+    open var type:CodelabsType = .Join
     
     private var socket:WebSocket?
     private var tempRemotSdp:String?

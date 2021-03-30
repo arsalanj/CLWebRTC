@@ -1,44 +1,90 @@
 //
 //  AppDelegate.swift
-//  CLWebRTC
+//  CodelabsWebRTC
 //
-//  Created by 11611707 on 03/30/2021.
-//  Copyright (c) 2021 11611707. All rights reserved.
+//  Created by Mehdi on 02/03/2021.
 //
 
 import UIKit
 
-@UIApplicationMain
+@main
 class AppDelegate: UIResponder, UIApplicationDelegate {
 
     var window: UIWindow?
 
-
-    func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplicationLaunchOptionsKey: Any]?) -> Bool {
+    func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
         // Override point for customization after application launch.
         return true
     }
 
-    func applicationWillResignActive(_ application: UIApplication) {
-        // Sent when the application is about to move from active to inactive state. This can occur for certain types of temporary interruptions (such as an incoming phone call or SMS message) or when the user quits the application and it begins the transition to the background state.
-        // Use this method to pause ongoing tasks, disable timers, and throttle down OpenGL ES frame rates. Games should use this method to pause the game.
-    }
+    
+    func application(_ application: UIApplication, continue userActivity: NSUserActivity, restorationHandler: @escaping ([UIUserActivityRestoring]?) -> Void) -> Bool {
 
-    func applicationDidEnterBackground(_ application: UIApplication) {
-        // Use this method to release shared resources, save user data, invalidate timers, and store enough application state information to restore your application to its current state in case it is terminated later.
-        // If your application supports background execution, this method is called instead of applicationWillTerminate: when the user quits.
-    }
+            guard userActivity.activityType == NSUserActivityTypeBrowsingWeb,
+                let url = userActivity.webpageURL, let components = URLComponents(url: url, resolvingAgainstBaseURL: true) else {
+                    return false
+                }
+        print("url \(url)")
+        print("components.path \(components.path)")
+        
+        let queryItems = URLComponents(string: url.absoluteString)?.queryItems
+        let param1 = queryItems?.filter({$0.name == "room"}).first
+        print(param1?.value ?? "")
+        
+        let vc = UIStoryboard.init(name: "Main", bundle: Bundle.main).instantiateViewController(withIdentifier: "FirstViewController") as? FirstViewController
+        
+        
+        if (param1?.value != nil )
+        
+        {
+            let decodedData = Data(base64Encoded: param1?.value ?? "")!
+            let decodedString = String(data: decodedData, encoding: .utf8)!
+            
+            print(decodedString)
+            
+            let strArray = decodedString.components(separatedBy: "_")
+            print("roomID \(String(describing: strArray.last))")
+            print("roomName \(String(describing: strArray.first))")
 
-    func applicationWillEnterForeground(_ application: UIApplication) {
-        // Called as part of the transition from the background to the inactive state; here you can undo many of the changes made on entering the background.
-    }
+            let roomID = strArray.last ?? ""
+            let roomName = strArray.first ?? ""
+            
+            if (!roomID.isEmpty){
+                
+                
+                
+                vc?.roomID = roomID
+                vc?.roomName = roomName
+                
+                
+                
+                
+            }
+            
+            
+        }
+        let navigationController = UINavigationController(rootViewController: vc!)
+        
+        
+        self.window = UIWindow(frame: UIScreen.main.bounds)
+        if let window = window {
+            window.rootViewController = navigationController
+        }
+        window?.makeKeyAndVisible()
+        
+        
 
-    func applicationDidBecomeActive(_ application: UIApplication) {
-        // Restart any tasks that were paused (or not yet started) while the application was inactive. If the application was previously in the background, optionally refresh the user interface.
-    }
-
-    func applicationWillTerminate(_ application: UIApplication) {
-        // Called when the application is about to terminate. Save data if appropriate. See also applicationDidEnterBackground:.
+            //FOR A URL "https://yourwebsite.com/testing/24
+            //this will print the ID 24
+            
+//            if (components.path.contains("testing")) {
+//                if let theid = Int(url.lastPathComponent) {
+//                    print("test id from deep link \(theid)")
+//                }
+//            }
+            
+            
+            return false
     }
 
 
