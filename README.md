@@ -22,7 +22,7 @@ pod 'CLWebRTC'
 
 ## Author
 
-11611707, arsalanjaf@gmail.com
+Muhammad Mehdi, m.mehdi@codelabs.inc
 
 ## License
 
