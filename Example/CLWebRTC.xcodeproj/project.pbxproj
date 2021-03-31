@@ -9,6 +9,8 @@
 /* Begin PBXBuildFile section */
 		607FACD61AFB9204008FA782 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 607FACD51AFB9204008FA782 /* AppDelegate.swift */; };
 		607FACEC1AFB9204008FA782 /* Tests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 607FACEB1AFB9204008FA782 /* Tests.swift */; };
+		9130D326261437A600401F3B /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 9130D324261437A500401F3B /* LaunchScreen.xib */; };
+		9130D327261437A600401F3B /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9130D325261437A600401F3B /* Main.storyboard */; };
 		9197C1B92613625C00AC704C /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9197C1AD2613625B00AC704C /* Images.xcassets */; };
 		9197C1BA2613625C00AC704C /* RemoteViews.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9197C1AF2613625B00AC704C /* RemoteViews.swift */; };
 		9197C1BB2613625C00AC704C /* TestViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9197C1B02613625B00AC704C /* TestViewController.swift */; };
@@ -19,8 +21,6 @@
 		9197C1C02613625C00AC704C /* Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9197C1B62613625C00AC704C /* Extension.swift */; };
 		9197C1C12613625C00AC704C /* CollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9197C1B72613625C00AC704C /* CollectionViewCell.swift */; };
 		9197C1C22613625C00AC704C /* FirstViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9197C1B82613625C00AC704C /* FirstViewController.swift */; };
-		9197C1F62613664F00AC704C /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 9197C1F22613664F00AC704C /* LaunchScreen.xib */; };
-		9197C1F72613664F00AC704C /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9197C1F42613664F00AC704C /* Main.storyboard */; };
 		EADB86257143E2435A58F2D1 /* Pods_CLWebRTC_Example.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 070210C3A084A9A23EEB168D /* Pods_CLWebRTC_Example.framework */; };
 		F8E044803875DD3E539E2E6B /* Pods_CLWebRTC_Tests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0439F8798C47DC4093DA2C31 /* Pods_CLWebRTC_Tests.framework */; };
 /* End PBXBuildFile section */
@@ -46,6 +46,8 @@
 		607FACEA1AFB9204008FA782 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		607FACEB1AFB9204008FA782 /* Tests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Tests.swift; sourceTree = "<group>"; };
 		912D9E26B977E312E8D4CE97 /* CLWebRTC.podspec */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = CLWebRTC.podspec; path = ../CLWebRTC.podspec; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		9130D324261437A500401F3B /* LaunchScreen.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = LaunchScreen.xib; sourceTree = "<group>"; };
+		9130D325261437A600401F3B /* Main.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Main.storyboard; sourceTree = "<group>"; };
 		9197C1AD2613625B00AC704C /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 		9197C1AF2613625B00AC704C /* RemoteViews.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RemoteViews.swift; sourceTree = "<group>"; };
 		9197C1B02613625B00AC704C /* TestViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TestViewController.swift; sourceTree = "<group>"; };
@@ -56,8 +58,6 @@
 		9197C1B62613625C00AC704C /* Extension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Extension.swift; sourceTree = "<group>"; };
 		9197C1B72613625C00AC704C /* CollectionViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CollectionViewCell.swift; sourceTree = "<group>"; };
 		9197C1B82613625C00AC704C /* FirstViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FirstViewController.swift; sourceTree = "<group>"; };
-		9197C1F32613664F00AC704C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = LaunchScreen.xib; sourceTree = "<group>"; };
-		9197C1F52613664F00AC704C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Main.storyboard; sourceTree = "<group>"; };
 		9197C206261366CE00AC704C /* CLWebRTC_Example.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = CLWebRTC_Example.entitlements; sourceTree = "<group>"; };
 		9EC90268CD2466E608FB9601 /* Pods-CLWebRTC_Example.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CLWebRTC_Example.debug.xcconfig"; path = "Target Support Files/Pods-CLWebRTC_Example/Pods-CLWebRTC_Example.debug.xcconfig"; sourceTree = "<group>"; };
 		B14F93B6EA7464EAE98D8114 /* Pods-CLWebRTC_Tests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CLWebRTC_Tests.release.xcconfig"; path = "Target Support Files/Pods-CLWebRTC_Tests/Pods-CLWebRTC_Tests.release.xcconfig"; sourceTree = "<group>"; };
@@ -111,7 +111,8 @@
 		607FACD21AFB9204008FA782 /* Example for CLWebRTC */ = {
 			isa = PBXGroup;
 			children = (
-				9197C1F12613664F00AC704C /* Base.lproj */,
+				9130D324261437A500401F3B /* LaunchScreen.xib */,
+				9130D325261437A600401F3B /* Main.storyboard */,
 				9197C1B12613625B00AC704C /* CollectionReusableView.swift */,
 				9197C1B72613625C00AC704C /* CollectionViewCell.swift */,
 				9197C1B62613625C00AC704C /* Extension.swift */,
@@ -187,16 +188,6 @@
 				9197C1B52613625C00AC704C /* Utility.swift */,
 			);
 			path = Helpers;
-			sourceTree = "<group>";
-		};
-		9197C1F12613664F00AC704C /* Base.lproj */ = {
-			isa = PBXGroup;
-			children = (
-				9197C1F22613664F00AC704C /* LaunchScreen.xib */,
-				9197C1F42613664F00AC704C /* Main.storyboard */,
-			);
-			name = Base.lproj;
-			path = "../../../../CodelabsWebRTC - active/CodelabsWebRTC/CodelabsWebRTC/Base.lproj";
 			sourceTree = "<group>";
 		};
 		BF9BCB51C891C794C68E9E53 /* Pods */ = {
@@ -299,8 +290,8 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				9197C1F72613664F00AC704C /* Main.storyboard in Resources */,
-				9197C1F62613664F00AC704C /* LaunchScreen.xib in Resources */,
+				9130D327261437A600401F3B /* Main.storyboard in Resources */,
+				9130D326261437A600401F3B /* LaunchScreen.xib in Resources */,
 				9197C1B92613625C00AC704C /* Images.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -420,25 +411,6 @@
 			targetProxy = 607FACE61AFB9204008FA782 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
-
-/* Begin PBXVariantGroup section */
-		9197C1F22613664F00AC704C /* LaunchScreen.xib */ = {
-			isa = PBXVariantGroup;
-			children = (
-				9197C1F32613664F00AC704C /* Base */,
-			);
-			name = LaunchScreen.xib;
-			sourceTree = "<group>";
-		};
-		9197C1F42613664F00AC704C /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				9197C1F52613664F00AC704C /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
-/* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
 		607FACED1AFB9204008FA782 /* Debug */ = {
